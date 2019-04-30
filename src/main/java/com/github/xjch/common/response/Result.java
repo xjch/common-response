@@ -68,30 +68,66 @@ public class Result<T> implements Serializable {
                 "}";
     }
 
+    /**
+     * 获取请求结果
+     * @return 请求成功与否。true:请求成功；false请求失败
+     */
     public boolean getReqResult(){
         return this.reqResult;
     }
+
+    /**
+     * 设置请求结果
+     * @param reqResult 请求成功与否。true:请求成功；false请求失败
+     */
     public void  setReqResult(Boolean reqResult){
         this.reqResult = reqResult;
     }
 
+    /**
+     * 获取响应结果
+     * @return 请求返回的数据
+     */
     public T getRespResult(){
         return this.respResult;
     }
+
+    /**
+     * 设置响应结果
+     * @param respResult 请求返回的数据
+     */
     public void setRespResult(T respResult){
         this.respResult = respResult;
     }
 
+    /**
+     * 获取错误编码
+     * @return 请求返回的错误编码
+     */
     public String getRespErrorCode(){
         return this.respErrorCode;
     }
+
+    /**
+     * 设置错误编码
+     * @param respErrorCode 请求返回的错误编码
+     */
     public void setRespErrorCode(String respErrorCode){
         this.respErrorCode = respErrorCode;
     }
 
+    /**
+     * 获取请求失败返回的错误信息
+     * @return 请求失败返回的错误信息
+     */
     public String getRespErrorMsg(){
         return this.respErrorMsg;
     }
+
+    /**
+     * 设置请求失败返回的错误信息
+     * @param respErrorMsg 请求失败返回的错误信息
+     */
     public void setRespErrorMsg(String respErrorMsg){
         this.respErrorMsg = respErrorMsg;
     }
